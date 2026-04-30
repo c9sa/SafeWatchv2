@@ -6,21 +6,6 @@ SafeWatch is a Singapore-focused public safety incident verification system. It 
 
 This project is being rebuilt from a hackathon prototype into a more structured, scalable, and observable AI agent system.
 
-## Overview
-
-SafeWatch is designed to solve a common problem in community safety reporting: online posts may contain useful public safety information, but they are often unstructured, vague, duplicated, exaggerated, or unrelated to actual local incidents.
-
-The system uses an agentic workflow to process each report through multiple stages:
-
-1. Crawl source posts from public platforms
-2. Store the untouched raw post
-3. Clean and extract incident details
-4. Classify the incident category, authenticity, and severity
-5. Decide whether to publish, reject, or retry classification
-6. Log every agent step for observability
-7. Publish approved incidents to a public-facing table or dashboard
-
-
 ## System Architecture
 
 ```text
@@ -84,6 +69,20 @@ SAFEWATCHV2/
   .gitignore
   README.md
 ```
+
+## Overview
+
+SafeWatch is designed to solve a common problem in community safety reporting: online posts may contain useful public safety information, but they are often unstructured, vague, duplicated, exaggerated, or unrelated to actual local incidents.
+
+The system uses an agentic workflow to process each report through multiple stages:
+
+1. Crawl source posts from public platforms
+2. Store the untouched raw post
+3. Clean and extract incident details
+4. Classify the incident category, authenticity, and severity
+5. Decide whether to publish, reject, or retry classification
+6. Log every agent step for observability
+7. Publish approved incidents to a public-facing table or dashboard
 
 ## Core Features
 
