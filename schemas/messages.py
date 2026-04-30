@@ -1,0 +1,1 @@
+# Defines the standard format for agent messages, feedback, reasoning logs, and trace entries

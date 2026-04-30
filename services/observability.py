@@ -1,0 +1,1 @@
+# Logs agent runs, model inputs/outputs, latency, errors, and trace information

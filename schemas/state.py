@@ -1,0 +1,1 @@
+# Defines the shared LangGraph pipeline state passed between agents

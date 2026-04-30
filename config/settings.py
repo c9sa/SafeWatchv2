@@ -1,0 +1,1 @@
+# Stores the valid incident categories, category descriptions, and any category-related constants.
