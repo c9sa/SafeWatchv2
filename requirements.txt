@@ -1,0 +1,6 @@
+pydantic2
+supabase
+requests
+openai
+dotenv
+langgraph

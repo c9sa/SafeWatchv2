@@ -1,1 +1,0 @@
-# Stores the prompt template used by the decision agent
