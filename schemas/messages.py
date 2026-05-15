@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field, ConfigDict
 # Allowed agent names in the system.
 # Using Literal prevents typo names like "decision_agent" or "classifer".
 AgentName = Literal[
-    "Crawler",
+    "Fetcher",
     "Cleaner",
     "Classifier",
     "Decision Agent",

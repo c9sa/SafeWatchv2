@@ -14,7 +14,7 @@ class SafeWatchState(BaseModel):
     raw_post_id: Optional[str] = None
     source_platform: str = "reddit"
     source_url: Optional[str] = None
-    raw_text: str
+    raw_text: Optional[str] = None
     timestamp_text: Optional[str] = None
 
     # Incident DB row

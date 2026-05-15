@@ -1,7 +1,7 @@
 # python -m scripts.testrun_process_all_posts
 
 from services.db_readwrites import get_all_raw_posts
-from pipeline.process_post import process_raw_post_with_cleaner
+from pipeline.process_post import process_raw_post
 
 
 if __name__ == "__main__":
@@ -16,7 +16,7 @@ if __name__ == "__main__":
         raw_post_id = raw_post["id"]
 
         try:
-            result = process_raw_post_with_cleaner(raw_post_id)
+            result = process_raw_post(raw_post_id)
 
             print("Processed:", result["raw_post_id"])
             print("Incident:", result["incident_id"])

@@ -40,11 +40,22 @@ class CleanerOutput(BaseModel):
 
 class ClassifierOutput(BaseModel):
     # Output format for the Classifier agent.
+    # Used to validate category, authenticity, severity, and reasoning.
+
     model_config = ConfigDict(extra="forbid")
 
+    # Main incident category selected by the Classifier.
     category: CategoryType
+
+    # How believable/specific the report is.
+    # 0 = very weak/unreliable, 1 = highly specific/reliable.
     authenticity_score: float = Field(ge=0, le=1)
+
+    # How serious the incident seems.
+    # 0 = very minor, 1 = very severe.
     severity: float = Field(ge=0, le=1)
+
+    # Short explanation for the chosen category and scores.
     reasoning: str
 
 
