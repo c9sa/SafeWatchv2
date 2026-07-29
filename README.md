@@ -1,6 +1,6 @@
 # SafeWatch
 
-SafeWatch is a Singapore-focused public safety incident verification system. It collects community incident reports, cleans and structures the data, classifies the incident using AI agents, evaluates whether the report is publishable, and stores full agent traces for debugging, auditability, and demo explainability.
+SafeWatch listens to Singapore subreddits for unreported crimes. Our AI Agents classifies the incidents, evaluates whether the report is authentic, and stores full agent traces for debugging, auditability, and demo explainability.
 
 # Current Status
 
